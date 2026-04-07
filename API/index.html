@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
+<button onclick="fetchData()">Search</button>
+
+<!-- 1. The Sprite -->
+<img id="pokemonSprite" style="display:none; width:350px;">
+
+<!-- 2. The Basic Info (Types, Abilities, Stats) -->
+<div id="pokemonDetails"></div>
+
+<!-- 3. The Level-Up Moves -->
+<h3>Level-Up Moves:</h3>
+<table border="1" id="moveTable" style="display:none; width: 100%; text-align: left;">
+    <thead>
+        <tr>
+            <th>Level</th>
+            <th>Move</th>
+        </tr>
+    </thead>
+    <tbody id="p_moves"></tbody> <!-- THIS IS THE BOX THE ERROR IS COMPLAINING ABOUT -->
+</table>
+<!-- TM Moves Section -->
+<h3>TM Moves:</h3>
+<table border="1" id="tmTable" style="display:none; width: 100%; text-align: left;">
+    <thead>
+        <tr>
+            <th>Move Name</th>
+        </tr>
+    </thead>
+    <tbody id="p_tm_moves"></tbody>
+</table>
+    <script src="index.js"></script>
+</body>
+</html>
